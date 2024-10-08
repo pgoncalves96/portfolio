@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- JavaScript do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Google fonts CSS -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
+    <!-- Font Awesome CSS -->
+    <script src=https://kit.fontawesome.com/69b3271ffb.js crossorigin="anonymous"></script>
+
+    <title>Paulo Portfolio</title>
+</head>
+
+<body>
+   
+
+    <!-- Barra de redes sociais -->
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 text-right">
+                    <a href="https://www.facebook.com/?locale=pt_PT"><i class="fa fa-facebook-square fa-2x text-black mr-3 fs-5"></i></a>
+                    <a href="https://x.com/?lang=pt"><i class="fa fa-twitter-square fa-2x text-black mr-3 fs-5"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa fa-instagram fa-2x text-black mr-3 fs-5"></i></a>
+                    <a href="https://pt.linkedin.com/"><i class="fa fa-linkedin-square fa-2x text-black fs-5"></i></a>
+                </div>
+                <div class="col-md-6">
+                    <p class="mb-0 align text-end  fs-6">All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- Barra de Navegação -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-3" href="#">Paulo Gonçalves</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center  fs-4" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#skills">My Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#aboutme">About Me</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Projects
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#project1">Gaming</a></li>
+                            <li><a class="dropdown-item" href="#project2">Simulation</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#contactme">Contact me</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!--Carrocel de fotografias--> 
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+       <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img src="images\pier.jpeg" class="d-block w-100" alt="Image">
+            <div class="carousel-text  container">
+                <p class="fw-bolder">I´m a student developer</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="images\gaming.png" class="d-block w-100" alt="Image">
+            <!--<div class="carousel-text1">
+                <p class="fw-bolder">Gaming</p>
+            </div>-->
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="images\simulation.png" class="d-block w-100" alt="Image">
+            <!--<div class="carousel-text2">
+                <p class="fw-bolder">Simulation</p>
+            </div>-->
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    
+
+    <div class="text-overlay1">
+        <p id="skills"> knowledge of HTML. </p>
+        <p>Use of CSS3 to style.</p>
+        <p>Familiarity with JavaScript.</p>
+        <p>Coding in Java and Python.</p>
+    </div>
+
+    <div class="text-overlay2">
+        <p id="aboutme">I´m a student at ISEL</p>
+        <p>in computer and multimedia </p>
+        <p>engineering and have</p>
+        <p>a Google certification in</p>
+        <p>Cibersecurity, IT Support and </p>
+        <p>Data Analysis</p>
+    </div>
+
+    <div class="text-overlay3">
+        <p id="project1">Arcade and</p>
+        <p id="project1">board games</p>
+        <p id="project1">in Java</p>
+        <div class="video-container1">
+          <video controls autoplay loop width="600">
+            <source src="videos\gaming.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos HTML5.
+          </video>
+        </div>
+    </div>
+
+    <div class="text-overlay4">
+        <p id="project2">Simulation in Java</p>
+        <div class="video-container2">
+            <video controls autoplay loop width="600">
+              <source src="videos\simulation.mp4" type="video/mp4">
+              Seu navegador não suporta vídeos HTML5.
+            </video>
+        </div>
+    </div>
+
+
+    <div class="text-overlay5" id="contactme">
+        <p>email: pgoncalves@outlook.pt</p>
+    </div>
+
+  
+
+
+      <!--Para destacar a opção da navbar em conjugação com css-->
+     <script>
+        const navLinks = document.querySelectorAll('.nav-link');
+
+            // Remove a classe 'active' de todos os links ao carregar a página
+            navLinks.forEach(link => link.classList.remove('active'));
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    // Remove a classe 'active' de todos os links
+                    navLinks.forEach(link => link.classList.remove('active'));
+
+                    // Adiciona a classe 'active' ao link clicado
+                    link.classList.add('active');
+                });
+            });
+
+     </script> 
+    
+</body>
+
+
+
+</html>
