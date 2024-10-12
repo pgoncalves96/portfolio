@@ -28,15 +28,15 @@
 <body>
    
 
-    <!-- Barra de redes sociais -->
+    <!-- Social media bar -->
     <header>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 text-right">
-                    <a href="https://www.facebook.com/?locale=pt_PT"><i class="fa fa-facebook-square fa-2x text-black mr-3 fs-5"></i></a>
-                    <a href="https://x.com/?lang=pt"><i class="fa fa-twitter-square fa-2x text-black mr-3 fs-5"></i></a>
-                    <a href="https://www.instagram.com/"><i class="fa fa-instagram fa-2x text-black mr-3 fs-5"></i></a>
-                    <a href="https://pt.linkedin.com/"><i class="fa fa-linkedin-square fa-2x text-black fs-5"></i></a>
+                    <a href="https://www.facebook.com/?locale=pt_PT"><i class="fa fa-facebook-square fa-2x text-black mr-3 fs-4"></i></a>
+                    <a href="https://x.com/?lang=pt"><i class="fa fa-twitter-square fa-2x text-black mr-3 fs-4"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa fa-instagram fa-2x text-black mr-3 fs-4"></i></a>
+                    <a href="https://pt.linkedin.com/"><i class="fa fa-linkedin-square fa-2x text-black fs-4"></i></a>
                 </div>
                 <div class="col-md-6">
                     <p class="mb-0 align text-end  fs-6">All Rights Reserved</p>
@@ -47,7 +47,7 @@
 
 
 
-    <!-- Barra de Navegação -->
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand fs-3" href="#">Paulo Gonçalves</a>
@@ -86,7 +86,7 @@
     </nav>
 
 
-    <!--Carrocel de fotografias--> 
+    <!--Carousel slide--> 
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
        <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -102,15 +102,9 @@
           </div>
           <div class="carousel-item" data-bs-interval="3000">
             <img src="images\gaming.png" class="d-block w-100" alt="Image">
-            <!--<div class="carousel-text1">
-                <p class="fw-bolder">Gaming</p>
-            </div>-->
           </div>
           <div class="carousel-item" data-bs-interval="3000">
             <img src="images\simulation.png" class="d-block w-100" alt="Image">
-            <!--<div class="carousel-text2">
-                <p class="fw-bolder">Simulation</p>
-            </div>-->
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -124,7 +118,7 @@
     </div>
 
     
-
+    <!--Skills text-->
     <div class="text-overlay1">
         <p id="skills"> knowledge of HTML. </p>
         <p>Use of CSS3 to style.</p>
@@ -132,6 +126,7 @@
         <p>Coding in Java and Python.</p>
     </div>
 
+    <!--About me text-->
     <div class="text-overlay2">
         <p id="aboutme">I´m a student at ISEL</p>
         <p>in computer and multimedia </p>
@@ -141,29 +136,31 @@
         <p>Data Analysis</p>
     </div>
 
+    <!--Gaming text-->
     <div class="text-overlay3">
         <p id="project1">Arcade and</p>
-        <p id="project1">board games</p>
-        <p id="project1">in Java</p>
+        <p>board games</p>
+        <p>in Java</p>
         <div class="video-container1">
-          <video controls autoplay loop width="600">
+          <video controls autoplay loop width="400">
             <source src="videos\gaming.mp4" type="video/mp4">
             Seu navegador não suporta vídeos HTML5.
           </video>
         </div>
     </div>
 
+    <!--Simulation text-->
     <div class="text-overlay4">
         <p id="project2">Simulation in Java</p>
         <div class="video-container2">
-            <video controls autoplay loop width="600">
+            <video controls autoplay loop width="400">
               <source src="videos\simulation.mp4" type="video/mp4">
               Seu navegador não suporta vídeos HTML5.
             </video>
         </div>
     </div>
 
-
+    <!--Contact me text-->
     <div class="text-overlay5" id="contactme">
         <p>email: pgoncalves@outlook.pt</p>
     </div>
@@ -171,27 +168,19 @@
   
 
 
-      <!--Para destacar a opção da navbar em conjugação com css-->
-     <script>
+      
+    <script>
         const navLinks = document.querySelectorAll('.nav-link');
 
-            // Remove a classe 'active' de todos os links ao carregar a página
             navLinks.forEach(link => link.classList.remove('active'));
 
             navLinks.forEach(link => {
                 link.addEventListener('click', () => {
-                    // Remove a classe 'active' de todos os links
+                    
                     navLinks.forEach(link => link.classList.remove('active'));
-
-                    // Adiciona a classe 'active' ao link clicado
                     link.classList.add('active');
                 });
             });
-
-     </script> 
-    
+    </script> 
 </body>
-
-
-
 </html>
